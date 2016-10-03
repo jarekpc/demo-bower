@@ -1,0 +1,25 @@
+{
+  "name": "demo-bower",
+  "authors": [
+    "jarekpc@o2.pl"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src/main/resources/static/js/bower_components",
+    "test",
+    "tests",
+    "src/main/resources/static/bower_components"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8",
+    "angular-route": "^1.5.8",
+    "angular-resource": "^1.5.8",
+    "bootstrap": "^3.3.7"
+  }
+}
