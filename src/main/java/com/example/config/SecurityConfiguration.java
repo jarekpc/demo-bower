@@ -13,9 +13,10 @@ import org.springframework.security.config.annotation.web.configuration.WebSecur
 @Order(SecurityProperties.ACCESS_OVERRIDE_ORDER)
 public class SecurityConfiguration  extends WebSecurityConfigurerAdapter {
 
+    //select account_name,password FROM ACCOUNT where enabled = 'true'
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-            http.httpBasic().and().authorizeRequests().antMatchers("/index.html","/login.html","/").
+            http.httpBasic().and().authorizeRequests().antMatchers("/index.html","/login.html").
                     permitAll().anyRequest().authenticated().and()
                 .formLogin().loginPage("/login").permitAll().and().logout().permitAll();
     }

@@ -8,9 +8,8 @@ public class DemoBowerApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(DemoBowerApplication.class, args);
-
 	}
 
 
-
 }
+
